@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> Registration Form</h1>
+
+        <form class="form" onsubmit="return validation()">
+
+            <div class="a">
+                <label class="label-1"> Full name </label>
+                <input type="text" class="label1" name="fullName" id="fName" autocomplete="off">
+                <span id="fullname" style="color: red"> </span>
+            </div>
+            <hr class="anik">
+
+            <div class="a">
+                <label class="label-1"> E-mail </label>
+                <input type="text" class="label9" name="email" id="eMail" autocomplete="off">
+                <span id="userEmail" style="color: red"> </span>
+            </div>
+            <hr class="anik">
+
+            <div class="a">
+                <label class="label-1"> Password </label>
+                <input type="password" class="label2" name="password" id="pass">
+                <span id="passWord" style="color: red"> </span>
+            </div>
+            <hr class="anik" >
+
+            <div class="a">
+                <label class="label-1"> Re-type password </label>
+                <input type="password" class="label3" name="rePassword" id="rePass">
+                <span id="rePassword" style="color: red"> </span>
+            </div>
+            <hr class="anik">
+
+            <div class="a">
+                <label class="label-1"> Age </label>
+                <input type="number"  class="label4" name="age" id="userAge">
+                <span id="age" style="color: red"></span>
+            </div>
+            <hr class="anik">
+
+            <div>
+                <label for="Religion"> Religion </label>
+                <select name="Religion" id="religion">
+                    <option class="religionOption" value="muslim">Muslim</option>
+                    <option class="religionOption" value="hindu">Hindu</option>
+                    <option class="religionOption" value="others">Others</option>
+                </select>
+            </div><br><br><br>
+            <hr class="anik">
+
+            <div class="gen">
+                <label for="">Gender</label><br>
+                <input type="radio"  type="radio" name="gender" checked value="male">Male<br>
+                <input type="radio"  type="radio" name="gender" value="female">Female <br>
+                <input type="radio"  type="radio" name="gender" value="othersGender"> Others
+            </div><br>
+            <hr class="anik">
+
+            <div class="agree">
+                <input type="checkbox" name="checkbox" value="check" id="agree" />
+                <a href="">I have read and agree to the Terms and Conditions and Privacy Policy</a>
+                <span id="condition" style="color: red"></span>
+            </div><br>
+            
+
+            <div class="btn1">
+                <button type="submit"  id="btn"> Submit </button>
+            </div>
+
+        </form>
+    </div>
+
+    
+
+   
+</body>
+
+</html>
